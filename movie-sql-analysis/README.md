@@ -40,3 +40,31 @@ The database includes:
 ## Tools Used
 SQL (MySQL/PostgreSQL syntax)
 
+---
+
+## How to Run This Project
+
+You can run this project using any SQL environment such as:
+
+- MySQL Workbench
+- PostgreSQL
+- SQLite
+- SQL Server
+- DBeaver
+- DB Fiddle (online)
+- SQL Fiddle (online)
+
+### Steps:
+1. Copy and run the code in `movies_sample_data.sql` to create and populate the database.
+2. Run the queries in `movies.sql` to analyze the data.
+
+---
+
+## Sample Query Results
+
+### Most common genre:
+```sql
+SELECT genre, COUNT(*) AS total_movies
+FROM movies
+GROUP BY genre
+ORDER BY total_movies DESC;
